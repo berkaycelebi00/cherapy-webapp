@@ -54,8 +54,9 @@ import router from '../../router/index'
         items: [
           { title: 'Dashboard', icon: 'mdi-view-dashboard', routeName: '/dashboard'},
           { title: 'Chat', icon: 'mdi-chat', routeName: '/chat' },
-
           { title: 'Volunteer as a listener', icon: 'mdi-hand-heart', routeName: '/volunteer' },
+          { title: 'My counsellors', icon: 'mdi-handshake', routeName: '/my-counsellors' },
+          
         ],
         username:this.$route.params.username
       }

@@ -1,19 +1,52 @@
 <template>
     <main class="grid">
-  <article v-for="doctor in doctors" :key="doctor.key">
+
+  <v-card
+    :loading="loading"
+
+    max-width="374"
+    v-for = "doctor in doctors" :key="doctor.key"
+  >
     <v-img :src="doctor.photoSrc" alt="Sample photo"  max-height="250" contain></v-img>
-    <div class="text">
-      <h3>{{doctor.name}}</h3>
-      <p>{{doctor.description}}</p>
-      
-      <v-icon color="#ccc73d">mdi-star</v-icon>
-      <v-icon color="#ccc73d">mdi-star</v-icon>
-      <v-icon color="#ccc73d">mdi-star</v-icon>
-      <v-icon >mdi-star</v-icon>
-      <v-icon >mdi-star</v-icon>
-      <button @click="toChatPage" >Start a new meet</button>
-    </div>
-  </article>
+    <v-card-title>{{doctor.name}}</v-card-title>
+    <v-card-text>
+      <v-row
+        align="center"
+        class="mx-0"
+      >
+        <v-rating
+          :value="4.5"
+          color="amber"
+          dense
+          half-increments
+          readonly
+          size="14"
+        ></v-rating>
+
+        <div class="grey--text ms-4">
+          4.5 (413)
+        </div>
+      </v-row>
+      <div class="my-4 text-subtitle-1">
+
+      </div>
+
+      <div>{{doctor.description}}</div>
+    </v-card-text>
+
+    <v-divider class="mx-4"></v-divider>
+
+    <v-card-actions>
+      <v-btn
+
+        text
+        @click="toChatPage"
+      >
+        Start talking
+      </v-btn>
+    </v-card-actions>
+  </v-card>
+  
   
   
 </main>

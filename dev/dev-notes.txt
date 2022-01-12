@@ -1,0 +1,9 @@
+Uygulamada 2 rol olacak.
+Profesyoneller ve danışanlar.
+
+Danışanlar üye olup giriş yapabilecekler.
+Profesyoneller ayrıca bir form doldurup üye olabilecekler. Sonrasında ilan verip hastalarını takip edebilecekler.
+
+Yapılacaklar:
+Profesyonellerin danışanlarla anlaşıp online chatte vakit geçirmelerini sağlayacak bir sistem geliştirilmeli.
+Bundan sonraki tüm todolar chat sisteminin oturtulmasıyla ilgili. Bu yüzden stateler birbirine girebileceği için gerekli ui dizaynı ilerleyen süreçte geliştirilecektir.
